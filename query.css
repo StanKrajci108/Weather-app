@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+  .appBody {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
