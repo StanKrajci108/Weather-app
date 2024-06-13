@@ -54,6 +54,7 @@ function updateUI(data, forecastData) {
         `;
     }
   });
+  forecastElement.style.padding = "10px";
 }
 
 async function searchWeather() {
