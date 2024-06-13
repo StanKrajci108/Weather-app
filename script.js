@@ -47,14 +47,14 @@ function updateUI(data, forecastData) {
       forecastElement.innerHTML += `
             <div class="forecast-day">
                 <p>${date}</p>
-                <p>Temp: ${day.temp.day}°C</p>
-                <p>Weather: ${day.weather[0].description}</p>
-                <p>Icon: <img src="icons/${day.weather[0].icon}.svg" alt="icon"></p> <!-- Placeholder for icon -->
+                <p>${day.temp.day}°C</p>
+                <p>${day.weather[0].description}</p>
+                <img src="icons/${day.weather[0].icon}.svg" alt="icon"> <!-- Placeholder for icon -->
             </div>
         `;
     }
   });
-  forecastElement.style.padding = "10px";
+  forecastElement.style.padding = "20px 10px";
 }
 
 async function searchWeather() {
