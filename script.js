@@ -49,7 +49,7 @@ function updateUI(data, forecastData) {
                 <p>${date}</p>
                 <p>Temp: ${day.temp.day}°C</p>
                 <p>Weather: ${day.weather[0].description}</p>
-                <p>Icon: <img src="icons/${day.weather[0].icon}.png" alt="icon"></p> <!-- Placeholder for icon -->
+                <p>Icon: <img src="icons/${day.weather[0].icon}.svg" alt="icon"></p> <!-- Placeholder for icon -->
             </div>
         `;
     }
