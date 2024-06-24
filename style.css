@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f1f1f1;
+  background: #fff9e9;
 }
 
 .appBody {
@@ -53,11 +53,11 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  border-radius: 15px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
   margin: 15px 0;
-  background-image: linear-gradient(#b4b4b4, rgb(210, 210, 210));
+  background-image: linear-gradient(#fff9e9, rgb(210, 210, 210));
 }
 
 .forecast-day p {
@@ -69,10 +69,10 @@ button {
   width: 700px;
   margin-top: 20px;
   /* padding: 10px; */
-  background-color: #b4b4b4;
-  border: 1px solid #ccc;
+  background-color: #f4eede;
+  /* border: 1px solid #ccc; */
   border-radius: 25px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.552); */
 }
 
 .forecast-container h3 {
