@@ -44,10 +44,11 @@ function updateUI(data, forecastData) {
     if (index > 0 && index <= 7) {
       // Skip the current day and get the next 7 days
       const date = new Date(day.dt * 1000).toLocaleDateString();
+      const temperature = day.temp.day.toFixed(1);
       forecastElement.innerHTML += `
   <div class="forecast-day">
     <p class="date">${date}</p>
-    <p class="temp">${day.temp.day}°C</p>
+    <p class="temp">${temperature}°C</p>
     <p class="description">${day.weather[0].description}</p>
     <img src="icons/${day.weather[0].icon}.svg" alt="icon">
   </div>
