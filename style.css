@@ -6,6 +6,7 @@
 
 body {
   background: #fff9e9;
+  font-family: "Montserrat", sans-serif;
 }
 
 .appBody {
@@ -54,25 +55,41 @@ button {
   align-items: center;
   width: 80%;
   padding: 20px 30px;
-  border: 1px solid #ccc;
+  border: 2px solid #fff8da;
   border-radius: 50px;
   margin: 15px 0;
-  background-image: linear-gradient(#fff9e9, rgb(210, 210, 210));
+  background-image: linear-gradient(#fff9e9, rgba(213, 210, 199, 0.831));
 }
 
 .forecast-day p {
-  margin: 5px 0;
   color: #555;
+}
+
+.forecast-day .temp {
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex: 1; /* Allow the temperature to take up space */
+  text-align: left; /* Center the temperature text */
+  margin-left: 2rem;
+}
+
+.forecast-day .date {
+  font-weight: 500;
+  flex: 1; /* Allow the date to take up space */
+  text-align: left; /* Align the date text to the left */
+}
+
+.forecast-day .description {
+  flex: 2; /* Allow the description to take up more space */
+  text-align: center; /* Align the description text to the right */
+  font-weight: 500;
 }
 
 .forecast-container {
   width: 700px;
   margin-top: 20px;
-  /* padding: 10px; */
   background-color: #f4eede;
-  /* border: 1px solid #ccc; */
   border-radius: 25px;
-  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.552); */
 }
 
 .forecast-container h3 {

@@ -45,13 +45,13 @@ function updateUI(data, forecastData) {
       // Skip the current day and get the next 7 days
       const date = new Date(day.dt * 1000).toLocaleDateString();
       forecastElement.innerHTML += `
-            <div class="forecast-day">
-                <p>${date}</p>
-                <p>${day.temp.day}°C</p>
-                <p>${day.weather[0].description}</p>
-                <img src="icons/${day.weather[0].icon}.svg" alt="icon"> <!-- Placeholder for icon -->
-            </div>
-        `;
+  <div class="forecast-day">
+    <p class="date">${date}</p>
+    <p class="temp">${day.temp.day}°C</p>
+    <p class="description">${day.weather[0].description}</p>
+    <img src="icons/${day.weather[0].icon}.svg" alt="icon">
+  </div>
+`;
     }
   });
   forecastElement.style.padding = "20px 10px";
