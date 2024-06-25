@@ -32,11 +32,27 @@ async function getForecastData(lat, lon) {
 // Function to update the UI with weather information
 function updateUI(data, forecastData) {
   const currentWeatherElement = document.getElementById("currentWeather");
+  const temperatureClass = getTemperatureClass(data.main.temp);
   currentWeatherElement.innerHTML = `
         <h2>${data.name}, ${data.sys.country}</h2>
-        <p>Temperature: ${data.main.temp}°C</p>
+        <p class="tempToday ${temperatureClass}">${data.main.temp.toFixed(
+    1
+  )}°C</p>
         <p>Weather: ${data.weather[0].description}</p>
+        <img src="icons/${data.weather[0].icon}.svg" alt="icon">
     `;
+
+  function getTemperatureClass(temp) {
+    if (temp >= 30) {
+      return "hot";
+    } else if (temp > 20) {
+      return "warm";
+    } else if (temp < 10) {
+      return "cold";
+    } else {
+      return "normal";
+    }
+  }
 
   const forecastElement = document.getElementById("forecast");
   forecastElement.innerHTML = "<h3>7-Day Forecast:</h3>";

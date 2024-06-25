@@ -6,4 +6,17 @@
   button {
     margin-top: 1rem;
   }
+
+  .forecast-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .forecast-day {
+    flex-direction: column;
+  }
+
+  .forecast-day .temp {
+    margin: 0;
+  }
 }
