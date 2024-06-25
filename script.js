@@ -71,6 +71,12 @@ function updateUI(data, forecastData) {
     <img src="icons/${day.weather[0].icon}.svg" alt="icon">
   </div>
 `;
+
+      console.log(`Forecast day ${index} icon:`, day.weather[0].icon); // Debugging
+      console.log(
+        `Forecast day ${index} description:`,
+        day.weather[0].description
+      ); // Debugging
     }
   });
   forecastElement.style.padding = "20px 10px";
