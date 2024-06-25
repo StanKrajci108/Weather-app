@@ -20,8 +20,19 @@ body {
 
 h1 {
   margin-bottom: 20px;
-  color: darkslateblue;
-  font-size: 2rem;
+  background-image: linear-gradient(
+    to right,
+    #c13a09,
+    #f7ac06,
+    #edd721,
+    #89d0f2,
+    #7048b4
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* color: darkslateblue; */
+  font-size: 2.2rem;
 }
 
 button {
@@ -32,11 +43,11 @@ button {
 
 #cityInput,
 button {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
 }
 
 #currentWeather,
