@@ -49,6 +49,8 @@ function updateUI(data, forecastData) {
       return "warm";
     } else if (temp < 10) {
       return "cold";
+    } else if (temp < 0) {
+      return "frost";
     } else {
       return "normal";
     }

@@ -19,4 +19,10 @@
   .forecast-day .temp {
     margin: 0;
   }
+
+  .search {
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 1rem;
+  }
 }
